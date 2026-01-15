@@ -20,7 +20,7 @@ permissions:
 jobs:
   therock-build-linux:
     name: Build (${{ inputs.amdgpu_families }})
-    runs-on: azure-linux-scale-rocm
+    runs-on: ubuntu-24.04
     permissions:
       id-token: write
     container:
