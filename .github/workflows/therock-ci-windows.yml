@@ -20,7 +20,7 @@ permissions:
 jobs:
   therock-build-windows:
     name: Build (${{ inputs.amdgpu_families }})
-    runs-on: azure-windows-scale-rocm
+    runs-on: windows-latest
     outputs:
       AMDGPU_FAMILIES: ${{ env.AMDGPU_FAMILIES }}
     permissions:
